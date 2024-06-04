@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Nilai by Iman</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-center"><b>Aplikasi Nilai</b></h1>
+
+    <!--Untuk NIM-->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="nim"><b>NIM</b></label>
+                <input type="text" class="form-control" id="nim" placeholder="NIM">
+            </div>
+
+            <!--Untuk NAMA-->
+            <div class="form-group">
+                <label for="nama"><b>Nama</b></label>
+                <input type="text" class="form-control" id="nama" placeholder="Nama">
+            </div>
+        </div>
+    </div>
+
+    <!--Untuk Pembahasan Nilai Teori-->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                   <b>Nilai Teori</b>
+                </div>
+                <!--Presensi nya-->
+                <div class="card-body" style="background-color: #ffffff ;">
+                    <div class="form-group">
+                        <label for="presensiTeori"><b>Presensi</b></label>
+                        <input type="number" class="form-control" id="presensiTeori" placeholder="Presensi">
+                    </div>
+                    <!--Tugas nya-->
+                    <div class="form-group">
+                        <label for="tugasTeori"><b>Tugas</b></label>
+                        <input type="number" class="form-control" id="tugasTeori" placeholder="Tugas">
+                    </div>
+                    <!--Uts nya-->
+                    <div class="form-group">
+                        <label for="utsTeori"><b>UTS</b></label>
+                        <input type="number" class="form-control" id="utsTeori" placeholder="UTS">
+                    </div>
+                    <!--Uas nya-->
+                    <div class="form-group">
+                        <label for="uasTeori"><b>UAS</b></label>
+                        <input type="number" class="form-control" id="uasTeori" placeholder="UAS">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Untuk Pembahasan Nilai Praktiki-->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <b>Nilai Praktik</b>
+                </div>
+                <!--Presensi nya-->
+                <div class="card-body" style="background-color: #ffffff;">
+                    <div class="form-group">
+                        <label for="presensiPraktik"><b>Presensi</b></label>
+                        <input type="number" class="form-control" id="presensiPraktik" placeholder="Presensi">
+                    </div>
+                    <!--Tugas nya-->
+                    <div class="form-group">
+                        <label for="tugasPraktik"><b>Tugas</b></label>
+                        <input type="number" class="form-control" id="tugasPraktik" placeholder="Tugas">
+                    </div>
+                    <!--Uts nya-->
+                    <div class="form-group">
+                        <label for="utsPraktik"><b>UTS</b></label>
+                        <input type="number" class="form-control" id="utsPraktik" placeholder="UTS">
+                    </div>
+                    <!--Uas nya-->
+                    <div class="form-group">
+                        <label for="uasPraktik"><b>UAS</b></label>
+                        <input type="number" class="form-control" id="uasPraktik" placeholder="UAS">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Tombol simpan dan batal-->
+    <button id="submitButton" class="btn btn-primary"><b>Simpan</b></button>
+    <button id="resetButton" class="btn btn-danger"><b>Batal</b></button>
+
+    <div class="table-container">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th><b>No</b></th>
+                    <th><b>NIM</b></th>
+                    <th><b>Nama</b></th>
+                    <th><b>Presensi Teori</b></th>
+                    <th><b>Tugas Teori</b></th>
+                    <th><b>UTS Teori</b></th>
+                    <th><b>UAS Teori</b></th>
+                    <th><b>Presensi Praktik</b></th>
+                    <th><b>Tugas Praktik</b></th>
+                    <th><b>UTS Praktik</b></th>
+                    <th><b>UAS Praktik</b></th>
+                    <th><b>Nilai Akhir</b></th>
+                    <th><b>Grade</b></th>
+                </tr>
+            </thead>
+            <tbody id="nilaiTableBody">
+
+            </tbody>
+        </table>
+        <button id="resetTableButton" class="btn btn-warning"><b>Reset</b></button>
+    </div>
+</div>
+<script src="script.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
